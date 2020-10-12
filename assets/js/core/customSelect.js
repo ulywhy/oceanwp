@@ -1,10 +1,10 @@
-var $j = jQuery.noConflict();
-
-$j( document ).ready( function() {
-	"use strict";
-	// Custom select
-	oceanwpCustomSelects();
-} );
+( function( owp ) {
+	owp( function() {
+		"use strict";
+		// Custom select
+		oceanwpCustomSelects();
+	} );
+} )( oceanWP );
 
 /* ==============================================
 CUSTOM SELECT
@@ -12,7 +12,7 @@ CUSTOM SELECT
 function oceanwpCustomSelects() {
 	"use strict"
 
-	$j( oceanwpLocalize.customSelects ).customSelect( {
+	jQuery( oceanwpLocalize.customSelects ).customSelect( {
 		customClass: 'theme-select'
 	} );
 
